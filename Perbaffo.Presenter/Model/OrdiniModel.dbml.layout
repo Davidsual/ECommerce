@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.125, 11.5" name="OrdiniModel">
+  <DataContextMoniker Name="/OrdiniModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="035e9be9-cf35-42e1-b374-e97a05955f87" absoluteBounds="0.5, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/OrdiniModelDataContext/TipoPagamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e52b4aa7-8d54-4285-bd85-33c7b23ae19a" absoluteBounds="0.515, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30d59efe-fe31-4d59-8055-57457fe66fab" absoluteBounds="0.5, 2.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/OrdiniModelDataContext/TipoSpedizioni" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fa4a28e-4d4e-4fec-b53e-b7e0f7befad5" absoluteBounds="0.51500000000000012, 3.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e949edce-feaa-4d54-bd1f-05a75a02e5e2" absoluteBounds="6, 0.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/OrdiniModelDataContext/DettagliOrdini" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a64562c-20a5-4617-8bfb-30d2ebb257cb" absoluteBounds="6.015, 1.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb799c5b-e0ac-4c0c-b792-48e88c258258" absoluteBounds="2.625, 7, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/OrdiniModelDataContext/StatoOrdine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ff6ab9d-3db3-4ae7-9518-bde23e330bf4" absoluteBounds="2.6399999999999997, 7.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0f82f60e-d494-4863-a913-8075a034ff04" absoluteBounds="5.875, 5.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/OrdiniModelDataContext/UtentiPromozioni" />
+      <nestedChildShapes>
+        <elementListCompartment Id="071f056a-9146-4f6a-a72d-4f68cfb8f6cb" absoluteBounds="5.89, 6.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35acf6a7-c671-4749-abed-7a8832cd5a10" absoluteBounds="6.25, 3, 2, 2.5401025390625">
+      <DataClassMoniker Name="/OrdiniModelDataContext/CodicePromozioni" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca5972f4-2fc6-4757-a96f-ab482058f123" absoluteBounds="6.265, 3.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c3899a8-1f62-43d8-92fd-6e2430cfda0d" absoluteBounds="0.5, 4.875, 2, 6.3861311848958326">
+      <DataClassMoniker Name="/OrdiniModelDataContext/OrdiniDettagliato" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13362f0f-d30a-4ca7-9bf6-6f43422b1008" absoluteBounds="0.51500000000000012, 5.335, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="608435ba-d156-4a21-b3fc-16f61590768d" absoluteBounds="8.875, 2.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/OrdiniModelDataContext/CodiceAffiliazione" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5859ed42-6b79-41a3-96ce-f7f8bc6f3539" absoluteBounds="8.89, 2.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="691d6758-6dc1-44ae-a7f1-ae70df64e7da" absoluteBounds="8.875, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/OrdiniModelDataContext/AffiliazioneOrdini" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14b4a298-6e07-4bae-95d8-121f91f4a42e" absoluteBounds="8.89, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2055089e-9777-4676-bbe4-adfb321f6e72" absoluteBounds="3.25, 0.5, 2, 5.8092268880208326">
+      <DataClassMoniker Name="/OrdiniModelDataContext/Ordini" />
+      <nestedChildShapes>
+        <elementListCompartment Id="002a2fe6-ace9-4d55-b42b-36e5df3132eb" absoluteBounds="3.265, 0.96, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

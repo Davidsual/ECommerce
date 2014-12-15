@@ -1,0 +1,1444 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8B7FA69-2089-4065-8BA1-90EDFA5B85AD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Perbaffo.Web.UI</RootNamespace>
+    <AssemblyName>Perbaffo.Web.UI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\img\aspetto.gif" />
+    <Content Include="Admin\img\bricks.gif" />
+    <Content Include="Admin\img\cart_put.gif" />
+    <Content Include="Admin\img\categorie32.gif" />
+    <Content Include="Admin\img\chart.gif" />
+    <Content Include="Admin\img\cog_edit.gif" />
+    <Content Include="Admin\img\colori16.gif" />
+    <Content Include="Admin\img\delete16.gif" />
+    <Content Include="Admin\img\desktop.gif" />
+    <Content Include="Admin\img\email.gif" />
+    <Content Include="Admin\img\esporta.gif" />
+    <Content Include="Admin\img\exit.gif" />
+    <Content Include="Admin\img\filenew.gif" />
+    <Content Include="Admin\img\files16.gif" />
+    <Content Include="Admin\img\folder_table.gif" />
+    <Content Include="Admin\img\fotogallery16.gif" />
+    <Content Include="Admin\img\group.gif" />
+    <Content Include="Admin\img\house.gif" />
+    <Content Include="Admin\img\info.gif" />
+    <Content Include="Admin\img\mail32.gif" />
+    <Content Include="Admin\img\modtaglie16.gif" />
+    <Content Include="Admin\img\money.gif" />
+    <Content Include="Admin\img\ordini32.gif" />
+    <Content Include="Admin\img\package.gif" />
+    <Content Include="Admin\img\pen16.gif" />
+    <Content Include="Admin\img\photos.gif" />
+    <Content Include="Admin\img\preview.gif" />
+    <Content Include="Admin\img\prodotti32.gif" />
+    <Content Include="Admin\img\reload16.gif" />
+    <Content Include="Admin\img\statistiche32.gif" />
+    <Content Include="Admin\img\table_relationship.gif" />
+    <Content Include="Admin\img\tag16.gif" />
+    <Content Include="Admin\img\taglie32.gif" />
+    <Content Include="Admin\img\tasto.gif" />
+    <Content Include="Admin\img\utenti32.gif" />
+    <Content Include="Admin\img\warning.gif" />
+    <Content Include="Admin\Pager.ascx" />
+    <Content Include="Admin\img\testa.jpg" />
+    <Content Include="Admin\Menu.ascx" />
+    <Content Include="Admin\Prodotti.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acquisto.aspx.cs">
+      <DependentUpon>Acquisto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acquisto.aspx.designer.cs">
+      <DependentUpon>Acquisto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acquisto-Indirizzo-Spedizione.aspx.cs">
+      <DependentUpon>Acquisto-Indirizzo-Spedizione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acquisto-Indirizzo-Spedizione.aspx.designer.cs">
+      <DependentUpon>Acquisto-Indirizzo-Spedizione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acquisto-Omaggio.aspx.cs">
+      <DependentUpon>Acquisto-Omaggio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acquisto-Omaggio.aspx.designer.cs">
+      <DependentUpon>Acquisto-Omaggio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acquisto-Pagamenti.aspx.cs">
+      <DependentUpon>Acquisto-Pagamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acquisto-Pagamenti.aspx.designer.cs">
+      <DependentUpon>Acquisto-Pagamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acquisto-Riepilogo.aspx.cs">
+      <DependentUpon>Acquisto-Riepilogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acquisto-Riepilogo.aspx.designer.cs">
+      <DependentUpon>Acquisto-Riepilogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Classes\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Classes\BasePageUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CodiciPromozioni.aspx.cs">
+      <DependentUpon>CodiciPromozioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CodiciPromozioni.aspx.designer.cs">
+      <DependentUpon>CodiciPromozioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CodiciAffiliazione.aspx.cs">
+      <DependentUpon>CodiciAffiliazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CodiciAffiliazione.aspx.designer.cs">
+      <DependentUpon>CodiciAffiliazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StatistichePerbaffo.aspx.cs">
+      <DependentUpon>StatistichePerbaffo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StatistichePerbaffo.aspx.designer.cs">
+      <DependentUpon>StatistichePerbaffo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OrdiniAffiliazione.aspx.cs">
+      <DependentUpon>OrdiniAffiliazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OrdiniAffiliazione.aspx.designer.cs">
+      <DependentUpon>OrdiniAffiliazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DettaglioCodiciAffiliazione.aspx.cs">
+      <DependentUpon>DettaglioCodiciAffiliazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DettaglioCodiciAffiliazione.aspx.designer.cs">
+      <DependentUpon>DettaglioCodiciAffiliazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DettaglioCuriosita.aspx.cs">
+      <DependentUpon>DettaglioCuriosita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DettaglioCuriosita.aspx.designer.cs">
+      <DependentUpon>DettaglioCuriosita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestCuriosita.aspx.cs">
+      <DependentUpon>GestCuriosita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestCuriosita.aspx.designer.cs">
+      <DependentUpon>GestCuriosita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProdottoVariazione.aspx.cs">
+      <DependentUpon>ProdottoVariazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProdottoVariazione.aspx.designer.cs">
+      <DependentUpon>ProdottoVariazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneVariazioni.aspx.cs">
+      <DependentUpon>GestioneVariazioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneVariazioni.aspx.designer.cs">
+      <DependentUpon>GestioneVariazioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DettaglioIndirizzo.aspx.cs">
+      <DependentUpon>DettaglioIndirizzo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DettaglioIndirizzo.aspx.designer.cs">
+      <DependentUpon>DettaglioIndirizzo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProdottiNonAttivi.aspx.cs">
+      <DependentUpon>ProdottiNonAttivi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProdottiNonAttivi.aspx.designer.cs">
+      <DependentUpon>ProdottiNonAttivi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DettaglioUtentiPromozioni.aspx.cs">
+      <DependentUpon>DettaglioUtentiPromozioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DettaglioUtentiPromozioni.aspx.designer.cs">
+      <DependentUpon>DettaglioUtentiPromozioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DettaglioCodiciPromozioni.aspx.cs">
+      <DependentUpon>DettaglioCodiciPromozioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DettaglioCodiciPromozioni.aspx.designer.cs">
+      <DependentUpon>DettaglioCodiciPromozioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EsportaNewsletter.aspx.cs">
+      <DependentUpon>EsportaNewsletter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EsportaNewsletter.aspx.designer.cs">
+      <DependentUpon>EsportaNewsletter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneNewsLetter.aspx.cs">
+      <DependentUpon>GestioneNewsLetter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneNewsLetter.aspx.designer.cs">
+      <DependentUpon>GestioneNewsLetter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OrdiniStatistiche.aspx.cs">
+      <DependentUpon>OrdiniStatistiche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OrdiniStatistiche.aspx.designer.cs">
+      <DependentUpon>OrdiniStatistiche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UtentePromozioni.aspx.cs">
+      <DependentUpon>UtentePromozioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UtentePromozioni.aspx.designer.cs">
+      <DependentUpon>UtentePromozioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneProdottiSenzaImmagine.aspx.cs">
+      <DependentUpon>GestioneProdottiSenzaImmagine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneProdottiSenzaImmagine.aspx.designer.cs">
+      <DependentUpon>GestioneProdottiSenzaImmagine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneProdottiCategoria.aspx.cs">
+      <DependentUpon>GestioneProdottiCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneProdottiCategoria.aspx.designer.cs">
+      <DependentUpon>GestioneProdottiCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DettagliNotizia.aspx.cs">
+      <DependentUpon>DettagliNotizia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DettagliNotizia.aspx.designer.cs">
+      <DependentUpon>DettagliNotizia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DettaglioOrdine.aspx.cs">
+      <DependentUpon>DettaglioOrdine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DettaglioOrdine.aspx.designer.cs">
+      <DependentUpon>DettaglioOrdine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneUtentiFoto.aspx.cs">
+      <DependentUpon>GestioneUtentiFoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneUtentiFoto.aspx.designer.cs">
+      <DependentUpon>GestioneUtentiFoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LoadImageCategoria.aspx.cs">
+      <DependentUpon>LoadImageCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LoadImageCategoria.aspx.designer.cs">
+      <DependentUpon>LoadImageCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneColori.aspx.cs">
+      <DependentUpon>GestioneColori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneColori.aspx.designer.cs">
+      <DependentUpon>GestioneColori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneOmaggi.aspx.cs">
+      <DependentUpon>GestioneOmaggi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneOmaggi.aspx.designer.cs">
+      <DependentUpon>GestioneOmaggi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionePagamenti.aspx.cs">
+      <DependentUpon>GestionePagamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionePagamenti.aspx.designer.cs">
+      <DependentUpon>GestionePagamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneProdottiSottoScorta.aspx.cs">
+      <DependentUpon>GestioneProdottiSottoScorta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneProdottiSottoScorta.aspx.designer.cs">
+      <DependentUpon>GestioneProdottiSottoScorta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneSpedizioni.aspx.cs">
+      <DependentUpon>GestioneSpedizioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneSpedizioni.aspx.designer.cs">
+      <DependentUpon>GestioneSpedizioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LoadImageNews.aspx.cs">
+      <DependentUpon>LoadImageNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LoadImageNews.aspx.designer.cs">
+      <DependentUpon>LoadImageNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LoadImagePhotogallery.aspx.cs">
+      <DependentUpon>LoadImagePhotogallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LoadImagePhotogallery.aspx.designer.cs">
+      <DependentUpon>LoadImagePhotogallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DettagliUtente.aspx.cs">
+      <DependentUpon>DettagliUtente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DettagliUtente.aspx.designer.cs">
+      <DependentUpon>DettagliUtente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneNovita.aspx.cs">
+      <DependentUpon>GestioneNovita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneNovita.aspx.designer.cs">
+      <DependentUpon>GestioneNovita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneOfferte.aspx.cs">
+      <DependentUpon>GestioneOfferte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneOfferte.aspx.designer.cs">
+      <DependentUpon>GestioneOfferte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneUtenti.aspx.cs">
+      <DependentUpon>GestioneUtenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneUtenti.aspx.designer.cs">
+      <DependentUpon>GestioneUtenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LoadImage.aspx.cs">
+      <DependentUpon>LoadImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LoadImage.aspx.designer.cs">
+      <DependentUpon>LoadImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notizie.aspx.cs">
+      <DependentUpon>Notizie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Notizie.aspx.designer.cs">
+      <DependentUpon>Notizie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ordini.aspx.cs">
+      <DependentUpon>Ordini.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Ordini.aspx.designer.cs">
+      <DependentUpon>Ordini.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ordini_Annullati.aspx.cs">
+      <DependentUpon>Ordini_Annullati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Ordini_Annullati.aspx.designer.cs">
+      <DependentUpon>Ordini_Annullati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ordini_Archiviati.aspx.cs">
+      <DependentUpon>Ordini_Archiviati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Ordini_Archiviati.aspx.designer.cs">
+      <DependentUpon>Ordini_Archiviati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ordini_Confermati.aspx.cs">
+      <DependentUpon>Ordini_Confermati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Ordini_Confermati.aspx.designer.cs">
+      <DependentUpon>Ordini_Confermati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ordini_Spediti.aspx.cs">
+      <DependentUpon>Ordini_Spediti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Ordini_Spediti.aspx.designer.cs">
+      <DependentUpon>Ordini_Spediti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pager.ascx.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pager.ascx.designer.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Prodotti.aspx.cs">
+      <DependentUpon>Prodotti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Prodotti.aspx.designer.cs">
+      <DependentUpon>Prodotti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProdottoPhotogallery.aspx.cs">
+      <DependentUpon>ProdottoPhotogallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProdottoPhotogallery.aspx.designer.cs">
+      <DependentUpon>ProdottoPhotogallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Allevamenti.aspx.cs">
+      <DependentUpon>Allevamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Allevamenti.aspx.designer.cs">
+      <DependentUpon>Allevamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Animali-da-Adottare.aspx.cs">
+      <DependentUpon>Animali-da-Adottare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Animali-da-Adottare.aspx.designer.cs">
+      <DependentUpon>Animali-da-Adottare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CaricaImmagineUtente.aspx.cs">
+      <DependentUpon>CaricaImmagineUtente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CaricaImmagineUtente.aspx.designer.cs">
+      <DependentUpon>CaricaImmagineUtente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chi-Siamo.aspx.cs">
+      <DependentUpon>Chi-Siamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chi-Siamo.aspx.designer.cs">
+      <DependentUpon>Chi-Siamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Classes\LineChart.cs" />
+    <Compile Include="Come-Ordinare.aspx.cs">
+      <DependentUpon>Come-Ordinare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Come-Ordinare.aspx.designer.cs">
+      <DependentUpon>Come-Ordinare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Commenta-Prodotto.aspx.cs">
+      <DependentUpon>Commenta-Prodotto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Commenta-Prodotto.aspx.designer.cs">
+      <DependentUpon>Commenta-Prodotto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conferma-Pagamento.aspx.cs">
+      <DependentUpon>Conferma-Pagamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conferma-Pagamento.aspx.designer.cs">
+      <DependentUpon>Conferma-Pagamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contatti.aspx.cs">
+      <DependentUpon>Contatti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contatti.aspx.designer.cs">
+      <DependentUpon>Contatti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrello-Prodotti.aspx.cs">
+      <DependentUpon>Carrello-Prodotti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrello-Prodotti.aspx.designer.cs">
+      <DependentUpon>Carrello-Prodotti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controlla-Spedizione.aspx.cs">
+      <DependentUpon>Controlla-Spedizione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controlla-Spedizione.aspx.designer.cs">
+      <DependentUpon>Controlla-Spedizione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scelta-della-taglia.aspx.cs">
+      <DependentUpon>Scelta-della-taglia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scelta-della-taglia.aspx.designer.cs">
+      <DependentUpon>Scelta-della-taglia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagerFull.ascx.cs">
+      <DependentUpon>PagerFull.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagerFull.ascx.designer.cs">
+      <DependentUpon>PagerFull.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportProdottiExcel.ashx.cs">
+      <DependentUpon>ExportProdottiExcel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Curiosita-Animali.aspx.cs">
+      <DependentUpon>Curiosita-Animali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Curiosita-Animali.aspx.designer.cs">
+      <DependentUpon>Curiosita-Animali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportProdottiBuyPlaza.ashx.cs">
+      <DependentUpon>ExportProdottiBuyPlaza.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportProdottiShopmania.ashx.cs">
+      <DependentUpon>ExportProdottiShopmania.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportProdottiIPrezzi.ashx.cs">
+      <DependentUpon>ExportProdottiIPrezzi.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dettaglio-Notizia.aspx.cs">
+      <DependentUpon>Dettaglio-Notizia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dettaglio-Notizia.aspx.designer.cs">
+      <DependentUpon>Dettaglio-Notizia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dettaglio-Ordini-Effettuati.aspx.cs">
+      <DependentUpon>Dettaglio-Ordini-Effettuati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dettaglio-Ordini-Effettuati.aspx.designer.cs">
+      <DependentUpon>Dettaglio-Ordini-Effettuati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galleria-Foto-Animali.aspx.cs">
+      <DependentUpon>Galleria-Foto-Animali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galleria-Foto-Animali.aspx.designer.cs">
+      <DependentUpon>Galleria-Foto-Animali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HttpCombinerHandler.ashx.cs">
+      <DependentUpon>HttpCombinerHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Leggi-Recensioni.aspx.cs">
+      <DependentUpon>Leggi-Recensioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Leggi-Recensioni.aspx.designer.cs">
+      <DependentUpon>Leggi-Recensioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lista-Desideri.aspx.cs">
+      <DependentUpon>Lista-Desideri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lista-Desideri.aspx.designer.cs">
+      <DependentUpon>Lista-Desideri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dettaglio-Categoria.aspx.cs">
+      <DependentUpon>Dettaglio-Categoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dettaglio-Categoria.aspx.designer.cs">
+      <DependentUpon>Dettaglio-Categoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dettaglio-Prodotto.aspx.cs">
+      <DependentUpon>Dettaglio-Prodotto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dettaglio-Prodotto.aspx.designer.cs">
+      <DependentUpon>Dettaglio-Prodotto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invia-Mail-Amico.aspx.cs">
+      <DependentUpon>Invia-Mail-Amico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invia-Mail-Amico.aspx.designer.cs">
+      <DependentUpon>Invia-Mail-Amico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\IPerbaffoSite.cs" />
+    <Compile Include="Lista-Notizie.aspx.cs">
+      <DependentUpon>Lista-Notizie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lista-Notizie.aspx.designer.cs">
+      <DependentUpon>Lista-Notizie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login-Utente.aspx.cs">
+      <DependentUpon>Login-Utente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login-Utente.aspx.designer.cs">
+      <DependentUpon>Login-Utente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCategorie.ascx.cs">
+      <DependentUpon>MenuCategorie.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuCategorie.ascx.designer.cs">
+      <DependentUpon>MenuCategorie.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamenti.aspx.cs">
+      <DependentUpon>Pagamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagamenti.aspx.designer.cs">
+      <DependentUpon>Pagamenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pager.ascx.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pager.ascx.designer.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagina-errore.aspx.cs">
+      <DependentUpon>Pagina-errore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagina-errore.aspx.designer.cs">
+      <DependentUpon>Pagina-errore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagina-non-trovata.aspx.cs">
+      <DependentUpon>Pagina-non-trovata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagina-non-trovata.aspx.designer.cs">
+      <DependentUpon>Pagina-non-trovata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pannello-Utente.aspx.cs">
+      <DependentUpon>Pannello-Utente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pannello-Utente.aspx.designer.cs">
+      <DependentUpon>Pannello-Utente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prodotti-Images.aspx.cs">
+      <DependentUpon>Prodotti-Images.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prodotti-Images.aspx.designer.cs">
+      <DependentUpon>Prodotti-Images.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prodotti-Novita.aspx.cs">
+      <DependentUpon>Prodotti-Novita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prodotti-Novita.aspx.designer.cs">
+      <DependentUpon>Prodotti-Novita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prodotti-Offerta.aspx.cs">
+      <DependentUpon>Prodotti-Offerta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prodotti-Offerta.aspx.designer.cs">
+      <DependentUpon>Prodotti-Offerta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prodotti-Omaggio.aspx.cs">
+      <DependentUpon>Prodotti-Omaggio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prodotti-Omaggio.aspx.designer.cs">
+      <DependentUpon>Prodotti-Omaggio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prodotti-per-Prezzo.aspx.cs">
+      <DependentUpon>Prodotti-per-Prezzo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prodotti-per-Prezzo.aspx.designer.cs">
+      <DependentUpon>Prodotti-per-Prezzo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prodotti-Piu-Votati.aspx.cs">
+      <DependentUpon>Prodotti-Piu-Votati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prodotti-Piu-Votati.aspx.designer.cs">
+      <DependentUpon>Prodotti-Piu-Votati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programma-Affiliazione-Perbaffo.aspx.cs">
+      <DependentUpon>Programma-Affiliazione-Perbaffo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programma-Affiliazione-Perbaffo.aspx.designer.cs">
+      <DependentUpon>Programma-Affiliazione-Perbaffo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Promozioni-Cani.aspx.cs">
+      <DependentUpon>Promozioni-Cani.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Promozioni-Cani.aspx.designer.cs">
+      <DependentUpon>Promozioni-Cani.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Promozioni-Gatti.aspx.cs">
+      <DependentUpon>Promozioni-Gatti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Promozioni-Gatti.aspx.designer.cs">
+      <DependentUpon>Promozioni-Gatti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin\PerbaffoMaster.Master.cs">
+      <DependentUpon>PerbaffoMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PerbaffoMaster.Master.designer.cs">
+      <DependentUpon>PerbaffoMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DettaglioProdotto.aspx.cs">
+      <DependentUpon>DettaglioProdotto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DettaglioProdotto.aspx.designer.cs">
+      <DependentUpon>DettaglioProdotto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProdottoFoto.aspx.cs">
+      <DependentUpon>ProdottoFoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProdottoFoto.aspx.designer.cs">
+      <DependentUpon>ProdottoFoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProdottoTaglia.aspx.cs">
+      <DependentUpon>ProdottoTaglia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProdottoTaglia.aspx.designer.cs">
+      <DependentUpon>ProdottoTaglia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProdottoCategoria.aspx.cs">
+      <DependentUpon>ProdottoCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProdottoCategoria.aspx.designer.cs">
+      <DependentUpon>ProdottoCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProdottoColore.aspx.cs">
+      <DependentUpon>ProdottoColore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProdottoColore.aspx.designer.cs">
+      <DependentUpon>ProdottoColore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProdottoRelazione.aspx.cs">
+      <DependentUpon>ProdottoRelazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProdottoRelazione.aspx.designer.cs">
+      <DependentUpon>ProdottoRelazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneCategorie.aspx.cs">
+      <DependentUpon>GestioneCategorie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneCategorie.aspx.designer.cs">
+      <DependentUpon>GestioneCategorie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrazione-Newsletter.aspx.cs">
+      <DependentUpon>Registrazione-Newsletter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrazione-Newsletter.aspx.designer.cs">
+      <DependentUpon>Registrazione-Newsletter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrazione-Utente.aspx.cs">
+      <DependentUpon>Registrazione-Utente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrazione-Utente.aspx.designer.cs">
+      <DependentUpon>Registrazione-Utente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrazione-Utente-Dati.aspx.cs">
+      <DependentUpon>Registrazione-Utente-Dati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrazione-Utente-Dati.aspx.designer.cs">
+      <DependentUpon>Registrazione-Utente-Dati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrazione-Utente-Foto.aspx.cs">
+      <DependentUpon>Registrazione-Utente-Foto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrazione-Utente-Foto.aspx.designer.cs">
+      <DependentUpon>Registrazione-Utente-Foto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrazione-Utente-Password.aspx.cs">
+      <DependentUpon>Registrazione-Utente-Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrazione-Utente-Password.aspx.designer.cs">
+      <DependentUpon>Registrazione-Utente-Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reminder.aspx.cs">
+      <DependentUpon>Reminder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reminder.aspx.designer.cs">
+      <DependentUpon>Reminder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Risultati-Ricerca.aspx.cs">
+      <DependentUpon>Risultati-Ricerca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Risultati-Ricerca.aspx.designer.cs">
+      <DependentUpon>Risultati-Ricerca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RssHandler.ashx.cs">
+      <DependentUpon>RssHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Siti-Amici.aspx.cs">
+      <DependentUpon>Siti-Amici.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Siti-Amici.aspx.designer.cs">
+      <DependentUpon>Siti-Amici.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Spedizioni.aspx.cs">
+      <DependentUpon>Spedizioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Spedizioni.aspx.designer.cs">
+      <DependentUpon>Spedizioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Termini-Condizioni.aspx.cs">
+      <DependentUpon>Termini-Condizioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Termini-Condizioni.aspx.designer.cs">
+      <DependentUpon>Termini-Condizioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking-SDA.aspx.cs">
+      <DependentUpon>Tracking-SDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tracking-SDA.aspx.designer.cs">
+      <DependentUpon>Tracking-SDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutti-Prodotti.aspx.cs">
+      <DependentUpon>Tutti-Prodotti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutti-Prodotti.aspx.designer.cs">
+      <DependentUpon>Tutti-Prodotti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Veterinari.aspx.cs">
+      <DependentUpon>Veterinari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Veterinari.aspx.designer.cs">
+      <DependentUpon>Veterinari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Viaggiare-con-Animali.aspx.cs">
+      <DependentUpon>Viaggiare-con-Animali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Viaggiare-con-Animali.aspx.designer.cs">
+      <DependentUpon>Viaggiare-con-Animali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetAssistenza.ascx.cs">
+      <DependentUpon>WidgetAssistenza.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WidgetAssistenza.ascx.designer.cs">
+      <DependentUpon>WidgetAssistenza.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetCarrello.ascx.cs">
+      <DependentUpon>WidgetCarrello.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WidgetCarrello.ascx.designer.cs">
+      <DependentUpon>WidgetCarrello.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetFoto.ascx.cs">
+      <DependentUpon>WidgetFoto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WidgetFoto.ascx.designer.cs">
+      <DependentUpon>WidgetFoto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetNews.ascx.cs">
+      <DependentUpon>WidgetNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WidgetNews.ascx.designer.cs">
+      <DependentUpon>WidgetNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetNewsletter.ascx.cs">
+      <DependentUpon>WidgetNewsletter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WidgetNewsletter.ascx.designer.cs">
+      <DependentUpon>WidgetNewsletter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetPerbaffo.ascx.cs">
+      <DependentUpon>WidgetPerbaffo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WidgetPerbaffo.ascx.designer.cs">
+      <DependentUpon>WidgetPerbaffo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetPerbaffoWorld.ascx.cs">
+      <DependentUpon>WidgetPerbaffoWorld.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WidgetPerbaffoWorld.ascx.designer.cs">
+      <DependentUpon>WidgetPerbaffoWorld.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetRegistrazione.ascx.cs">
+      <DependentUpon>WidgetRegistrazione.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WidgetRegistrazione.ascx.designer.cs">
+      <DependentUpon>WidgetRegistrazione.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Perbaffo.FTPClient\Perbaffo.FTPClient.csproj">
+      <Project>{BE86AC79-78A8-4C49-9581-4E2B95DA0AE4}</Project>
+      <Name>Perbaffo.FTPClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Perbaffo.Presenter\Perbaffo.Presenter.csproj">
+      <Project>{21F7942C-A04F-43E4-8CF9-E3A273349A40}</Project>
+      <Name>Perbaffo.Presenter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\GestioneColori.aspx" />
+    <Content Include="Admin\GestioneOmaggi.aspx" />
+    <Content Include="Admin\GestionePagamenti.aspx" />
+    <Content Include="Admin\GestioneProdottiSottoScorta.aspx" />
+    <Content Include="Admin\GestioneSpedizioni.aspx" />
+    <Content Include="Admin\LoadImagePhotogallery.aspx" />
+    <Content Include="Admin\DettagliUtente.aspx" />
+    <Content Include="Admin\GestioneNovita.aspx" />
+    <Content Include="Admin\GestioneOfferte.aspx" />
+    <Content Include="Admin\GestioneUtenti.aspx" />
+    <Content Include="Admin\CSS\content.css" />
+    <Content Include="Admin\img\add.gif" />
+    <Content Include="Admin\img\noimage.gif" />
+    <Content Include="Admin\img\photo.gif" />
+    <Content Include="Admin\img\prodotti.gif" />
+    <Content Include="Admin\img\relazioni.gif" />
+    <Content Include="Admin\img\save.gif" />
+    <Content Include="Admin\img\up2.gif" />
+    <Content Include="Admin\LoadImage.aspx" />
+    <Content Include="Admin\PerbaffoMaster.Master" />
+    <Content Include="Admin\HomePage.aspx" />
+    <Content Include="Admin\DettaglioProdotto.aspx" />
+    <Content Include="Admin\ProdottoPhotogallery.aspx" />
+    <Content Include="css\Perbaffo.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Header.ascx" />
+    <Content Include="images\bar_red.gif" />
+    <Content Include="images\botleft.gif" />
+    <Content Include="images\botright.gif" />
+    <Content Include="images\c3_1_10.gif" />
+    <Content Include="images\c3_2_10.gif" />
+    <Content Include="images\c3_3_10.gif" />
+    <Content Include="images\c3_4_10 copia.gif" />
+    <Content Include="images\c3_4_10.gif" />
+    <Content Include="images\facebook.gif" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\feed.gif" />
+    <Content Include="images\go_icon.gif" />
+    <Content Include="images\id_tags_cheap.jpg" />
+    <Content Include="images\Important_Info_emailv.gif" />
+    <Content Include="images\invert_botleft.gif" />
+    <Content Include="images\invert_botright.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\mainbuttons_bg.gif" />
+    <Content Include="images\mainbuttons_centre.gif" />
+    <Content Include="images\mainbuttons_left-1.gif" />
+    <Content Include="images\mainbuttons_right-1.gif" />
+    <Content Include="images\main_botcentre.gif" />
+    <Content Include="images\main_botleft.gif" />
+    <Content Include="images\main_botright.gif" />
+    <Content Include="images\main_leftcentre.gif" />
+    <Content Include="images\main_rightcentre.gif" />
+    <Content Include="images\main_topleft.gif" />
+    <Content Include="images\main_topright.gif" />
+    <Content Include="images\nav_bottom_left.gif" />
+    <Content Include="images\nav_bottom_right.gif" />
+    <Content Include="images\nav_centre_left.gif" />
+    <Content Include="images\nav_centre_right.gif" />
+    <Content Include="images\nav_left.gif" />
+    <Content Include="images\nav_right.gif" />
+    <Content Include="images\news_bullet.gif" />
+    <Content Include="images\no-image.jpg" />
+    <Content Include="images\Perbaffo.jpg" />
+    <Content Include="images\pixel.gif" />
+    <Content Include="images\pp_corner.gif" />
+    <Content Include="images\pp_corner_top.gif" />
+    <Content Include="images\pp_logo.gif" />
+    <Content Include="images\search_button.gif" />
+    <Content Include="images\Senza titolo-1.gif" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\star_grey.gif" />
+    <Content Include="images\star_grey_out.gif" />
+    <Content Include="images\star_half.gif" />
+    <Content Include="images\star_half_out.gif" />
+    <Content Include="images\star_red.gif" />
+    <Content Include="images\star_red_out.gif" />
+    <Content Include="images\subnav_centre.gif" />
+    <Content Include="images\subnav_left.gif" />
+    <Content Include="images\subnav_right.gif" />
+    <Content Include="images\topleft.gif" />
+    <Content Include="images\topright.gif" />
+    <Content Include="images\Visualizza.gif" />
+    <Content Include="images\white_navtop.gif" />
+    <Content Include="images\yellow_botleft.gif" />
+    <Content Include="images\yellow_botright.gif" />
+    <Content Include="images\yellow_centre_bottom.gif" />
+    <Content Include="images\yellow_centre_left.gif" />
+    <Content Include="images\yellow_centre_right.gif" />
+    <Content Include="images\yellow_topleft.gif" />
+    <Content Include="Login-Utente.aspx" />
+    <Content Include="MenuCategorie.ascx" />
+    <Content Include="Admin\ProdottoFoto.aspx" />
+    <Content Include="Admin\ProdottoTaglia.aspx" />
+    <Content Include="Admin\ProdottoCategoria.aspx" />
+    <Content Include="Admin\ProdottoColore.aspx" />
+    <Content Include="Admin\ProdottoRelazione.aspx" />
+    <Content Include="Admin\GestioneCategorie.aspx" />
+    <Content Include="Registrazione-Newsletter.aspx" />
+    <Content Include="Reminder.aspx" />
+    <Content Include="script\Perbaffo.Web.UI.Function.js" />
+    <Content Include="WidgetCarrello.ascx" />
+    <Content Include="WidgetFoto.ascx" />
+    <Content Include="WidgetNewsletter.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Acquisto.aspx" />
+    <Content Include="Acquisto-Indirizzo-Spedizione.aspx" />
+    <Content Include="Acquisto-Omaggio.aspx" />
+    <Content Include="Acquisto-Pagamenti.aspx" />
+    <Content Include="Acquisto-Riepilogo.aspx" />
+    <Content Include="Admin\Account.aspx" />
+    <Content Include="Admin\CodiciPromozioni.aspx" />
+    <Content Include="Admin\DettaglioUtentiPromozioni.aspx" />
+    <Content Include="Admin\DettaglioCodiciPromozioni.aspx" />
+    <Content Include="Admin\EsportaNewsletter.aspx" />
+    <Content Include="Admin\GestioneNewsLetter.aspx" />
+    <Content Include="Admin\img\admin.gif" />
+    <Content Include="Admin\img\chiavi.gif" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\Logout.aspx" />
+    <Content Include="Admin\OrdiniStatistiche.aspx" />
+    <Content Include="Admin\UtentePromozioni.aspx" />
+    <Content Include="Admin\GestioneProdottiSenzaImmagine.aspx" />
+    <Content Include="Admin\GestioneProdottiCategoria.aspx" />
+    <Content Include="Admin\DettagliNotizia.aspx" />
+    <Content Include="Admin\DettaglioOrdine.aspx" />
+    <Content Include="Admin\GestioneUtentiFoto.aspx" />
+    <Content Include="Admin\LoadImageCategoria.aspx" />
+    <Content Include="Admin\LoadImageNews.aspx" />
+    <Content Include="Admin\Notizie.aspx" />
+    <Content Include="Admin\Ordini.aspx" />
+    <Content Include="Admin\Ordini_Annullati.aspx" />
+    <Content Include="Admin\Ordini_Archiviati.aspx" />
+    <Content Include="Admin\Ordini_Confermati.aspx" />
+    <Content Include="Admin\Ordini_Spediti.aspx" />
+    <Content Include="Allevamenti.aspx" />
+    <Content Include="Animali-da-Adottare.aspx" />
+    <Content Include="CaricaImmagineUtente.aspx" />
+    <Content Include="Chi-Siamo.aspx" />
+    <Content Include="Come-Ordinare.aspx" />
+    <Content Include="Commenta-Prodotto.aspx" />
+    <Content Include="Contatti.aspx" />
+    <Content Include="Carrello-Prodotti.aspx" />
+    <Content Include="Controlla-Spedizione.aspx" />
+    <Content Include="Help.aspx" />
+    <Content Include="css\jquery.lightbox-0.5.css" />
+    <Content Include="Dettaglio-Notizia.aspx" />
+    <Content Include="Dettaglio-Ordini-Effettuati.aspx" />
+    <Content Include="Galleria-Foto-Animali.aspx" />
+    <Content Include="images\Banner\Banner1.jpg" />
+    <Content Include="images\Banner\Banner2.jpg" />
+    <Content Include="images\Banner\Banner3.jpg" />
+    <Content Include="images\Banner\Banner4.jpg" />
+    <Content Include="images\Banner\banner5.jpg" />
+    <Content Include="images\btn_buynowCC_LG.gif" />
+    <Content Include="images\CreditCardAmerican.gif" />
+    <Content Include="images\CreditCardAurora.gif" />
+    <Content Include="images\CreditCardMaster.gif" />
+    <Content Include="images\CreditCardVisa.gif" />
+    <Content Include="images\CreditCardVisa2.gif" />
+    <Content Include="images\delicious.png" />
+    <Content Include="images\digg.png" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\foto.gif" />
+    <Content Include="images\google.png" />
+    <Content Include="images\lightbox-blank.gif" />
+    <Content Include="images\lightbox-btn-close.gif" />
+    <Content Include="images\lightbox-btn-next.gif" />
+    <Content Include="images\lightbox-btn-prev.gif" />
+    <Content Include="images\lightbox-ico-loading.gif" />
+    <Content Include="images\lucchetto.gif" />
+    <Content Include="images\microsoftlive.png" />
+    <Content Include="images\newsletter\Neswsletter_gatti.jpg" />
+    <Content Include="images\newsletter\Newsletter_Cani.jpg" />
+    <Content Include="images\newsletter\Newsletter_pesci.jpg" />
+    <Content Include="images\newsletter\Newsletter_roditori.jpg" />
+    <Content Include="images\newsletter\Newsletter_volatili.jpg" />
+    <Content Include="images\oknotizie.png" />
+    <Content Include="images\ordine_step_1.gif" />
+    <Content Include="images\ordine_step_2.gif" />
+    <Content Include="images\ordine_step_3.gif" />
+    <Content Include="images\ordine_step_4.gif" />
+    <Content Include="images\orma.gif" />
+    <Content Include="images\Preferiti.gif" />
+    <Content Include="images\print.gif" />
+    <Content Include="images\reddit.png" />
+    <Content Include="images\Registrazione_passo_1.gif" />
+    <Content Include="images\Registrazione_passo_2.gif" />
+    <Content Include="images\sconto.gif" />
+    <Content Include="images\technorati.png" />
+    <Content Include="images\Visita-categoria-cani.jpg" />
+    <Content Include="images\Visita-categoria-gatti.jpg" />
+    <Content Include="images\Visita-categoria-pesci.jpg" />
+    <Content Include="images\Visita-categoria-roditori.jpg" />
+    <Content Include="images\Visita-categoria-volatili.jpg" />
+    <Content Include="images\yahoo.png" />
+    <Content Include="Leggi-Recensioni.aspx" />
+    <Content Include="Lista-Desideri.aspx" />
+    <Content Include="Dettaglio-Categoria.aspx" />
+    <Content Include="Dettaglio-Prodotto.aspx" />
+    <Content Include="Footer.ascx" />
+    <Content Include="images\carrello_delete.gif" />
+    <Content Include="images\cart_aggiorna.gif" />
+    <Content Include="images\help.gif" />
+    <Content Include="images\important.gif" />
+    <Content Include="images\info.gif" />
+    <Content Include="images\Offerta.jpg" />
+    <Content Include="images\PERBAFFO-BANNER.gif" />
+    <Content Include="images\title.gif" />
+    <Content Include="Invia-Mail-Amico.aspx" />
+    <Content Include="Lista-Notizie.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Pagamenti.aspx" />
+    <Content Include="Pager.ascx" />
+    <Content Include="Pannello-Utente.aspx" />
+    <Content Include="Prodotti-Novita.aspx" />
+    <Content Include="Prodotti-Offerta.aspx" />
+    <Content Include="Prodotti-Omaggio.aspx" />
+    <Content Include="Prodotti-Piu-Votati.aspx" />
+    <Content Include="Promozioni-Cani.aspx" />
+    <Content Include="Promozioni-Gatti.aspx" />
+    <Content Include="Registrazione-Utente.aspx" />
+    <Content Include="Registrazione-Utente-Dati.aspx" />
+    <Content Include="Registrazione-Utente-Foto.aspx" />
+    <Content Include="Registrazione-Utente-Password.aspx" />
+    <Content Include="Risultati-Ricerca.aspx" />
+    <Content Include="RssHandler.ashx" />
+    <Content Include="script\jquery-1.3.2.min.js" />
+    <Content Include="script\jquery.cross-slide.js" />
+    <Content Include="script\jquery.lightbox-0.5.pack.js" />
+    <Content Include="script\old_jquery.thumbhover.js" />
+    <Content Include="Siti-Amici.aspx" />
+    <Content Include="Spedizioni.aspx" />
+    <Content Include="Termini-Condizioni.aspx" />
+    <Content Include="Tutti-Prodotti.aspx" />
+    <Content Include="Veterinari.aspx" />
+    <Content Include="Viaggiare-con-Animali.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WidgetAssistenza.ascx" />
+    <Content Include="WidgetNews.ascx" />
+    <Content Include="WidgetPerbaffo.ascx" />
+    <Content Include="WidgetPerbaffoWorld.ascx" />
+    <Content Include="WidgetRegistrazione.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ProdottiNonAttivi.aspx" />
+    <Content Include="HttpCombinerHandler.ashx" />
+    <Content Include="images\Banner\Banner1.gif" />
+    <Content Include="images\Banner\banner2.gif" />
+    <Content Include="images\Banner\banner3.gif" />
+    <Content Include="images\Banner\banner4.gif" />
+    <Content Include="images\Banner\banner5.gif" />
+    <Content Include="images\categoria-cani-sel.gif" />
+    <Content Include="images\categoria-cani.gif" />
+    <Content Include="images\categoria-gatti-sel.gif" />
+    <Content Include="images\categoria-gatti.gif" />
+    <Content Include="images\categoria-pesci-sel.gif" />
+    <Content Include="images\categoria-pesci.gif" />
+    <Content Include="images\categoria-roditori-sel.gif" />
+    <Content Include="images\categoria-roditori.gif" />
+    <Content Include="images\categoria-volatili-sel.gif" />
+    <Content Include="images\categoria-volatili.gif" />
+    <Content Include="images\horiz_bar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\DettaglioIndirizzo.aspx" />
+    <Content Include="Admin\Web.config" />
+    <Content Include="ClientBin\FotoGallery.xap" />
+    <Content Include="Conferma-Pagamento.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\ScambioLink\Banner-All-Retrievers.jpg" />
+    <Content Include="images\ScambioLink\Banner-Cani-Beagle.jpg" />
+    <Content Include="images\ScambioLink\Banner-Forum-Baffi-Code.jpg" />
+    <Content Include="images\ScambioLink\Banner-Gattolandia.jpg" />
+    <Content Include="images\ScambioLink\Banner-Inseparabile.jpg" />
+    <Content Include="images\ScambioLink\Banner-Mercatino-di-Simona.jpg" />
+    <Content Include="images\ScambioLink\Banner-Perbaffo.jpg" />
+    <Content Include="images\ScambioLink\Banner-ShopMania.jpg" />
+    <Content Include="images\ScambioLink\Banner-Trova-Offerte.jpg" />
+    <Content Include="images\ScambioLink\Banner-Viagginrete.jpg" />
+    <Content Include="Pagina-errore.aspx" />
+    <Content Include="Pagina-non-trovata.aspx" />
+    <Content Include="Prodotti-per-Prezzo.aspx" />
+    <Content Include="script\Old_Perbaffo.Web.UI.Function.js" />
+    <Content Include="script\ToolTip.js" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\CodiciAffiliazione.aspx" />
+    <Content Include="Admin\StatistichePerbaffo.aspx" />
+    <Content Include="Admin\OrdiniAffiliazione.aspx" />
+    <Content Include="Admin\DettaglioCodiciAffiliazione.aspx" />
+    <Content Include="Admin\DettaglioCuriosita.aspx" />
+    <Content Include="Admin\GestCuriosita.aspx" />
+    <Content Include="Admin\ProdottoVariazione.aspx" />
+    <Content Include="Admin\GestioneVariazioni.aspx" />
+    <Content Include="images\come-scegliere-la-taglia-per-cani.jpg" />
+    <Content Include="images\ScambioLink\cani.gif" />
+    <Content Include="Scelta-della-taglia.aspx" />
+    <Content Include="images\categoria-rettili-sel.gif" />
+    <Content Include="images\categoria-rettili.gif" />
+    <Content Include="images\Ricerca-per-immagine.gif" />
+    <Content Include="images\twitter.jpg" />
+    <Content Include="images\Visita-categoria-rettili.jpg" />
+    <Content Include="PagerFull.ascx" />
+    <Content Include="Curiosita-Animali.aspx" />
+    <Content Include="ExportProdottiShopmania.ashx" />
+    <Content Include="ExportProdottiExcel.ashx" />
+    <None Include="Documents\Modulo-affiliazione-Perbaffo.pdf" />
+    <None Include="Documents\modulo-iscrizione-allevamento.pdf" />
+    <None Include="Documents\modulo-iscrizione-rifugio.pdf" />
+    <None Include="Documents\modulo-iscrizione-studio-veterinario.pdf" />
+    <None Include="Documents\Modulo-Ordine-Fax.pdf" />
+    <None Include="Documents\Perbaffo-Catalogo-Acquariologia.pdf" />
+    <None Include="Documents\Perbaffo-Catalogo-Cani.pdf" />
+    <None Include="Documents\Perbaffo-Catalogo-Gatti.pdf" />
+    <None Include="Documents\Perbaffo-Catalogo-Roditori.pdf" />
+    <None Include="Documents\Perbaffo-Catalogo-Volatili.pdf" />
+    <Content Include="ExportProdottiBuyPlaza.ashx" />
+    <Content Include="ExportProdottiIPrezzi.ashx" />
+    <Content Include="images\BANNER-PERBAFFO-NATALE.jpg" />
+    <Content Include="images\Banner\banner-Perbaffo-120x300.gif" />
+    <Content Include="images\Banner\banner-Perbaffo-180x174.gif" />
+    <Content Include="images\Banner\banner-Perbaffo-Animato-120x300.gif" />
+    <Content Include="images\Banner\banner-Perbaffo-animato-150x51.gif" />
+    <Content Include="images\Banner\banner-Perbaffo-statico-150x51.gif" />
+    <Content Include="images\Banner\Banner_Natale.jpg" />
+    <Content Include="images\Banner\banner_perbaffo_300_x_250.gif" />
+    <Content Include="images\Banner\banner_perbaffo_468_x_60.gif" />
+    <Content Include="images\Banner\banner_perbaffo_728_x_90.gif" />
+    <Content Include="images\Banner\banner_razze.jpg" />
+    <Content Include="images\Banner\banner_tifosi.jpg" />
+    <Content Include="images\Banner\caccia-alla-taglia.gif" />
+    <Content Include="images\Banner\Perbaffo-Prodotti-Immagini.jpg" />
+    <Content Include="images\Banner\rinnovo_magazzino.gif" />
+    <Content Include="images\capodanno.gif" />
+    <Content Include="images\chiuso.gif" />
+    <Content Include="images\chiuso_fiera.jpg" />
+    <Content Include="images\guadagna_con_perbaffo.jpg" />
+    <Content Include="images\natale.gif" />
+    <Content Include="images\OMAGGIO.gif" />
+    <Content Include="images\omaggio.jpg" />
+    <Content Include="images\ordine-via-fax.gif" />
+    <Content Include="images\pencil.gif" />
+    <Content Include="images\PERBAFFO-BANNER.jpg" />
+    <Content Include="images\PERBAFFO-Pasqua.jpg" />
+    <Content Include="images\PERBAFFO-PRIMAVERA.jpg" />
+    <Content Include="images\Programma-Affiliazione.gif" />
+    <Content Include="images\saldi.gif" />
+    <Content Include="images\ScambioLink\Banner-dolcechihuahua.jpg" />
+    <Content Include="images\ScambioLink\bannergrande.jpg" />
+    <Content Include="images\ScambioLink\bannerinoforum.gif" />
+    <Content Include="images\ScambioLink\Banner_Angeli_di_pasquale.jpg" />
+    <Content Include="images\Sconto-Spese-Spedizioni.gif" />
+    <Content Include="Prodotti-Images.aspx" />
+    <Content Include="Programma-Affiliazione-Perbaffo.aspx" />
+    <Content Include="Tracking-SDA.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1582</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Perbaffo</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

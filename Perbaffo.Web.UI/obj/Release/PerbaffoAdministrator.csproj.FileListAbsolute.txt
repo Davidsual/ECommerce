@@ -1,0 +1,7 @@
+D:\Progetti\Perbaffo\Perbaffo\PerbaffoAdministrator\bin\PerbaffoAdministrator.dll
+D:\Progetti\Perbaffo\Perbaffo\PerbaffoAdministrator\bin\PerbaffoAdministrator.pdb
+D:\Progetti\Perbaffo\Perbaffo\PerbaffoAdministrator\bin\Perbaffo.Presenter.dll
+D:\Progetti\Perbaffo\Perbaffo\PerbaffoAdministrator\bin\Perbaffo.Presenter.pdb
+D:\Progetti\Perbaffo\Perbaffo\PerbaffoAdministrator\obj\Release\ResolveAssemblyReference.cache
+D:\Progetti\Perbaffo\Perbaffo\PerbaffoAdministrator\obj\Release\PerbaffoAdministrator.dll
+D:\Progetti\Perbaffo\Perbaffo\PerbaffoAdministrator\obj\Release\PerbaffoAdministrator.pdb

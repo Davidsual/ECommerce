@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perbaffo.Web.UI", "Perbaffo.Web.UI\Perbaffo.Web.UI.csproj", "{D8B7FA69-2089-4065-8BA1-90EDFA5B85AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perbaffo.Presenter", "Perbaffo.Presenter\Perbaffo.Presenter.csproj", "{21F7942C-A04F-43E4-8CF9-E3A273349A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perbaffo.FTPClient", "Perbaffo.FTPClient\Perbaffo.FTPClient.csproj", "{BE86AC79-78A8-4C49-9581-4E2B95DA0AE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8B7FA69-2089-4065-8BA1-90EDFA5B85AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B7FA69-2089-4065-8BA1-90EDFA5B85AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B7FA69-2089-4065-8BA1-90EDFA5B85AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B7FA69-2089-4065-8BA1-90EDFA5B85AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F7942C-A04F-43E4-8CF9-E3A273349A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F7942C-A04F-43E4-8CF9-E3A273349A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F7942C-A04F-43E4-8CF9-E3A273349A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F7942C-A04F-43E4-8CF9-E3A273349A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE86AC79-78A8-4C49-9581-4E2B95DA0AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE86AC79-78A8-4C49-9581-4E2B95DA0AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE86AC79-78A8-4C49-9581-4E2B95DA0AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE86AC79-78A8-4C49-9581-4E2B95DA0AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

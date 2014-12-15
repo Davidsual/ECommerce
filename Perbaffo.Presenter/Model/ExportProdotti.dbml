@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="Perbaffo" Class="ExportProdottiDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.1.3\SQLEXPRESS;Initial Catalog=Perbaffo;Persist Security Info=True;User ID=Perbaffo" SettingsObjectName="Perbaffo.Presenter.Properties.Settings" SettingsPropertyName="PerbaffoConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.ExportProdottiIPrezzi" Method="ExportProdottiIPrezzi">
+    <ElementType Name="ExportProdottiIPrezziResult">
+      <Column Name="Nome" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="url" Type="System.String" DbType="VarChar(124)" CanBeNull="true" />
+      <Column Name="urlImage" Type="System.String" DbType="VarChar(75)" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Totale" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Categoria" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="marca" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ExportProdottiBuyPlaza" Method="ExportProdottiBuyPlaza">
+    <ElementType Name="ExportProdottiBuyPlazaResult">
+      <Column Name="Nome" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="marca" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="Totale" Type="System.Decimal" DbType="Decimal(0,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Categoria" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="urlImage" Type="System.String" DbType="VarChar(75)" CanBeNull="true" />
+      <Column Name="url" Type="System.String" DbType="VarChar(124)" CanBeNull="true" />
+      <Column Name="STATO" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

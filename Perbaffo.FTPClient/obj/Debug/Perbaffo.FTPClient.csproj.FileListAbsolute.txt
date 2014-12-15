@@ -1,0 +1,10 @@
+D:\Perbaffo\Perbaffo.FTPClient\bin\Debug\Perbaffo.FTPClient.dll
+D:\Perbaffo\Perbaffo.FTPClient\bin\Debug\Perbaffo.FTPClient.pdb
+D:\Perbaffo\Perbaffo.FTPClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Perbaffo\Perbaffo.FTPClient\obj\Debug\Perbaffo.FTPClient.dll
+D:\Perbaffo\Perbaffo.FTPClient\obj\Debug\Perbaffo.FTPClient.pdb
+D:\Progetti\Perbaffo\Perbaffo\Perbaffo.FTPClient\bin\Debug\Perbaffo.FTPClient.dll
+D:\Progetti\Perbaffo\Perbaffo\Perbaffo.FTPClient\bin\Debug\Perbaffo.FTPClient.pdb
+D:\Progetti\Perbaffo\Perbaffo\Perbaffo.FTPClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Progetti\Perbaffo\Perbaffo\Perbaffo.FTPClient\obj\Debug\Perbaffo.FTPClient.dll
+D:\Progetti\Perbaffo\Perbaffo\Perbaffo.FTPClient\obj\Debug\Perbaffo.FTPClient.pdb

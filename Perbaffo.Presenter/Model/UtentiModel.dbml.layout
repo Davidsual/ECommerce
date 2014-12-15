@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UtentiModel">
+  <DataContextMoniker Name="/UtentiModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="51a1f871-e784-4a84-84d7-f5eb063b2aa1" absoluteBounds="2.875, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/UtentiModelDataContext/Newsletter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="584adb99-2af5-4eb5-b7da-d72ed33e55eb" absoluteBounds="2.89, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54f668b5-63e6-4f30-b058-767cd2d03d49" absoluteBounds="0.5, 0.5, 2, 5.8092268880208326">
+      <DataClassMoniker Name="/UtentiModelDataContext/Utenti" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1168a9ed-80ca-4307-b968-852368662441" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d6e92816-15cf-4eb3-a3ec-ee078f4df5cc" absoluteBounds="2.875, 3.25, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/UtentiModelDataContext/Amministratore" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1324c456-15fb-4d04-a545-456d98abc00d" absoluteBounds="2.8899999999999997, 3.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

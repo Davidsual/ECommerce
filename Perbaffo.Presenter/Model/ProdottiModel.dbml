@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="Perbaffo" EntityNamespace="Perbaffo.Presenter.Model" ContextNamespace="Perbaffo.Presenter.Model" Class="ProdottiModelDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.1.3\SQLEXPRESS;Initial Catalog=Perbaffo;Persist Security Info=True;User ID=Perbaffo" SettingsObjectName="Perbaffo.Presenter.Properties.Settings" SettingsPropertyName="PerbaffoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ProdottiAllegati" Member="ProdottiAllegatis">
+    <Type Name="ProdottiAllegati">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDProdottoPrincipale" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDProdottoAllegato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdottiCategorie" Member="ProdottiCategories">
+    <Type Name="ProdottiCategorie">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDProdotto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDCategoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdottiColori" Member="ProdottiColoris">
+    <Type Name="ProdottiColori">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDProdotto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDColore" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AliquotaIva" Member="AliquotaIvas">
+    <Type Name="AliquotaIva">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ValoreAliquotaIva" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdottiImmagini" Member="ProdottiImmaginis">
+    <Type Name="ProdottiImmagini">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDProdotto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UrlImmagine" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="UrlImmagineHQ" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="DescrImmagine" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Offerte" Member="OfferteTabellas">
+    <Type Name="OfferteTabella">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDProdotto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Prezzo" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DataInserimentoOfferta" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdottiFotogallery" Member="ProdottiFotogalleries">
+    <Type Name="ProdottiFotogallery">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDProdotto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UrlImmagine" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DescrImmagine" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Colori" Member="Coloris">
+    <Type Name="Colori">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descrizione" Type="System.String" DbType="VarChar(50)" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdottiTaglie" Member="ProdottiTaglies">
+    <Type Name="ProdottiTaglie">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDProdotto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DescrTaglia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prezzo" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="ScontoPerc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScontoEuro" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Totale" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Codice" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Prodotti" Member="Prodottis">
+    <Type Name="Prodotti">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codice" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Keywords" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DescrizioneLunga" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Prezzo" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="IDAliquotaIva" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UnitaDiMisura" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Giacenza" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LivRiordino" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ScontoPercent" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScontoEuro" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Totale" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="IsOmaggio" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RangeOmaggio" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Attivo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DataInserimento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DescrTaglia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdottiRecensioni" Member="ProdottiRecensionis">
+    <Type Name="ProdottiRecensioni">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDUtente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDProdotto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Titolo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Voto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Recensione" Type="System.String" DbType="VarChar(450) NOT NULL" CanBeNull="false" />
+      <Column Name="DataInserimento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdottiVariazioni" Member="ProdottiVariazionis">
+    <Type Name="ProdottiVariazioni">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDProdotto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDVariazioni" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Variazioni" Member="Variazionis">
+    <Type Name="Variazioni">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descrizione" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
